@@ -1,0 +1,51 @@
+1、定义学生表
+create database tpoa;
+use tpoa;
+create table tp_student(	
+	id int not null auto_increment,
+	username varchar(20) not null,
+	password varchar(40) not null,
+	truename varchar(20) not null,
+	sex varchar(10) not null,
+	age int unsigned not null,
+	tel varchar(11) not null,
+	address varchar(255) not null,
+	addtime int not null,
+	remark varchar(255),
+	primary key(id)
+) default charset=utf8;
+
+2.定义学科表
+create table tp_subject(
+	id int primary key auto_increment,
+	title varchar(30) not null,
+	room varchar(30) not null,
+	remark varchar(225)
+)default charset=utf8;
+
+
+3.定义用户表
+create table tp_admin(
+id int primary key auto_increment,
+username varchar(10) not null,
+password varchar(40) not null,
+loginip varchar(15),
+addtime int )
+default charset=utf8;
+
+4。定义考勤表
+create table tp_kaoqin(
+	id int primary key auto_increment,
+	truename varchar(20) not null,
+	subject int not null,
+	addtime date not null
+)default charset=utf8;
+
+5，定义信息表
+create table tp_message(
+	id int primary key auto_increment,
+	title varchar(100) not null,
+	filepath varchar(255),
+	content text,
+	addtime int not null
+)default charset=utf8;

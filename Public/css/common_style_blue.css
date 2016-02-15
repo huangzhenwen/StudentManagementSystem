@@ -1,0 +1,264 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	width:100%;
+	overflow:hidden;
+	background-color: #F3F9FD;
+	color: #004779;
+	font-family: 宋体;
+	font-size: 12px;
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-top: 0;
+}
+form {
+	padding: 0;
+	margin: 0;
+}
+form table td {
+	padding-top: 5px;
+}
+td {
+	font-family: 宋体;
+	font-size: 12px;
+}
+img {
+	border: none;
+	vertical-align: middle;
+}
+.InputStyle {
+	width: 300px;
+}
+.TextareaStyle {
+	width: 300px;
+	height: 80px;
+}
+a:link, a:active, a:visited {
+	font-size: 12px;
+	color: #005791;
+	text-decoration: none;
+}
+a:hover {
+	font-size: 12px;
+	color: #0000ff;
+	text-decoration: underLine;
+}
+.FunctionButton {
+	background-image: url("images/button_bg.png")/*tpa=images/button_bg.png*/;
+	background-repeat: repeat-x;
+	float: left;
+	height: 16px;
+	font-size: 12px;
+	border: 1px solid #84A5C6;
+	margin: 0;
+	margin-left: 8px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 3px;
+}
+.FunctionButtonInput {
+	background-color: #FFFFFF;
+	background-image: url("images/button_bg.png")/*tpa=images/button_bg.png*/;
+	background-repeat: repeat-x;
+	float: left;
+	height: 21px;
+	font-size: 12px;
+	border: 1px solid #84A5C6;
+	margin: 0;
+	margin-left: 8px;
+	padding-left: 4px;
+	padding-right: 4px;
+	color: #005294;
+	padding-top: 1px;
+	cursor: pointer;
+}
+#TitleArea {
+	background: none repeat scroll 0 0 #91C0E3;
+	border-bottom: 7px solid #FFFFFF;
+	height: 28px;
+	width: 100%;
+	padding-top: 11px;
+	margin: 0;
+}
+/*TitleArea BackGround Set*/
+
+#QueryArea {
+	border-bottom: 3px solid #ABD8F9;
+	border-top: 1px solid #ABD8F9;
+	padding: 1px;
+	width: 100%;
+	background-image: url("images/QueryArea_bg.png")/*tpa=images/QueryArea_bg.png*/;
+	background-repeat: repeat;
+}
+#MainArea {
+	background: url("images/inputPageHeadBg.gif")/*tpa=images/inputPageHeadBg.gif*/ repeat-x scroll 0 0 transparent;
+	border-top: 1px solid #FFFFFF;
+	width: 100%;
+}
+#MainArea table.MainArea_Content {
+	border: medium none;
+	color: #004779;
+	font-size: 12px;
+	width: 100%;
+}
+#MainArea #TableTitle {
+	height: 25px;
+}
+#MainArea #TableTitle td {
+	border-left: 1px solid #D2D2D2;
+	border-right: 1px solid #FFFFFF;
+	border-top: 1px solid #D2D2D2;
+	height: 25px;
+	background-image: url("images/TableTitle_bg.png")/*tpa=images/TableTitle_bg.png*/;
+	background-repeat: repeat-x;
+}
+#MainArea #TableData .TableDetail1 {
+	background-color: #FFFFFF;
+	height: 22px;
+	vertical-align: bottom;
+}
+#MainArea #TableData .TableDetail1 td {
+	border-top: 1px solid #D2D2D2;
+	height: 24px;
+	padding: 3px 3px 3px 5px;
+	vertical-align: middle;
+}
+#MainArea #TableTail {
+	border-bottom: 2px solid #A4CDEC;
+	border-top: 2px solid #A4CDEC;
+	height: 24px;
+	width: 100%;
+	padding-top: 4px;
+	background-image: url("images/TableTail_bg.png")/*tpa=images/TableTail_bg.png*/;
+	background-repeat: repeat-x;
+}
+#PaginationBar {
+	float: left;
+	color: #005791;
+	font-size: 12px;
+	height: 25px;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 15px;
+	width: 100%;
+}
+#PaginationBar #PaginationBar_info {
+	float: left;
+	padding-top: 5px;
+}
+#PaginationBar #PaginationBar_info span {
+	margin-right: 10px;
+}
+#PaginationBar #PaginationBar_info #PaginationBar_PageSizeSelector {
+	font-size: 12px;
+	padding: 0;
+	height: 18px;
+}
+#PaginationBar #PaginationBar_PageSelectorArea {
+	float: right;
+	width: 470px;
+}
+#PaginationBar #PaginationBar_PageSelectorArea a {
+	cursor: pointer;
+}
+#PaginationBar_PageSelectorArea #PaginationBar_TablePageNum {
+	float: left;
+}
+#PaginationBar #PaginationBar_PageSelectorArea #PaginationBar_TablePageNum td {
+	padding: 0px;
+}
+#PaginationBar #PaginationBar_PageSelectorArea td.PageSelectorNum {
+	cursor: pointer;
+	font-family: "宋体";
+	padding: 0 3px;
+	text-align: center;
+	height: 14px;
+	border: 1px solid #ADCEEF;
+	background-color: #FFFFFF;
+	background-image: url("images/pageNum_bg.png")/*tpa=images/pagination/pageNum_bg.png*/;
+	background-repeat: repeat-x;
+}
+#PaginationBar #PaginationBar_PageSelectorArea td.PageSelectorNum_Selected {
+	cursor: text;
+	color: #FF0000;
+}
+#PaginationBar_PageSelectorArea #PageSelector_PageNumInputArea {
+	float: right;
+	width: 105px;
+	vertical-align: middle;
+	padding-top: 0px;
+	margin-left: 10px;
+	margin-right: 20px;
+}
+#PaginationBar #PaginationBar_PageSelectorArea #PageSelector_PageNumInput {
+	float: left;
+	width: 33px;
+	font-size: 12px;
+	padding: 0px;
+	margin-right: 5px;
+	margin-top: 4px;
+}
+#PaginationBar_PageSelectorArea #PageSelector_PageNumInputArea #PageSelector_SubmitImage {
+	float: left;
+	margin-top: 4px;
+}
+#PaginationBar #PaginationBar_PageSelectorArea #PageSelector_PageNumInputArea span {
+	float: left;
+	margin-right: 5px;
+	margin-top: 7px;
+}
+#DescriptionArea {
+	float: left;
+	margin: 12px;
+	display: inline;
+}
+/** --------------------- */
+
+#MainArea form {
+	padding-left: 50px;
+}
+#MainArea .ItemBlock_Title {
+	color: #004A7D;
+	font-family: 宋体;
+	font-size: 13px;
+	font-weight: bold;
+	margin-bottom: 3px;
+	margin-top: 10px;
+	padding-left: 5px;
+	text-align: left;
+	width: 90%;
+}
+#MainArea .ItemBlockBorder {
+	border: 1px solid #91C0E3;
+	text-align: left;
+	width: 90%;
+}
+#MainArea .ItemBlockBorder .ItemBlock {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 3px solid #F3F8FC;
+	padding: 10px;
+	text-align: left;
+}
+#MainArea .ItemBlockBorder .ItemBlock .ItemBlock2 {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+#MainArea .ItemBlockBorder .ItemBlock .mainForm {
+	border: medium none;
+	/* margin-left: 50px; */
+	display: inline;
+	width: 80%;
+}
+#MainArea #InputDetailBar {
+	float: left;
+	margin: 10px;
+	width: 80%;
+	padding-left: 30%;
+	display: inline;
+}
+#MainArea #InputDetailBar .FunctionButtonInput {
+	margin-right: 15px;
+}
+#DescriptionArea2 {
+	margin-left: 50px;
+}

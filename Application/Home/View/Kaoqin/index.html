@@ -1,0 +1,58 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>学生列表</title>
+<import type='css' file='Images.css1.css' />
+<import type='css' file='css.page' />
+<import file='scripts.jquery' />
+
+<style>
+td, th {
+	font-size:14px;
+	text-align: center
+}
+</style>
+<script>
+$(function(){
+	$('#delBtn').bind('click',function(event){
+		//阻止默认行为
+		event.preventDefault();
+		//弹出提示框
+		if(confirm('确认删除吗？')){
+			//提交表单
+			$('form:first').submit();
+		}
+	});
+});
+</script>
+</head>
+<body>
+<form method='post' action='__URL__/del'>
+  <table class="table" cellspacing="1" cellpadding="2" width="99%"
+			align="center" border="0">
+    <tbody>
+      <tr>
+        <th class="bg_tr" align="left" height="25">序号</th>
+		<th class="bg_tr" align="left" height="25">所在学科</th>
+		<th class="bg_tr" align="left" height="25">学生姓名</th>
+		<th class="bg_tr" align="left" height="25">迟到时间</th>
+      </tr>
+	  <volist name='data' id='vo' key='k'>
+      <tr>
+        <td class="td_bg" width="5%" height="23" align="center">{$vo.id}</td>
+		<td class="td_bg">{$vo.subject.title}</td>
+		<td class="td_bg">{$vo.truename}</td>
+        <td class="td_bg">{$vo.addtime}</td>
+      </tr>
+	  </volist>
+	  <tr>
+		<td colspan='10' style='text-align:right;'></td>
+      </tr>
+      <tr>
+        <td colspan="10"><div class='viciao'>{$show}</div></td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+</body>
+</html>

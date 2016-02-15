@@ -1,0 +1,30 @@
+[ 2016-01-02T00:25:36+08:00 ] 127.0.0.1 /index.php/index.php/DiaoCha/Index/deal.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+ERR: 无法加载模块:Index.php
+
+[ 2016-01-02T00:26:29+08:00 ] 127.0.0.1 /index.php/index.php/DiaoCha/Index/deal.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000840s ]
+ERR: 无法加载模块:Index.php
+
+[ 2016-01-02T00:26:52+08:00 ] 127.0.0.1 /index.php/index.php/DiaoCha/Index/deal.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+ERR: 无法加载模块:Index.php
+
+[ 2016-01-02T17:50:11+08:00 ] 127.0.0.1 /index.php/DiaoChao
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000886s ]
+ERR: 无法加载模块:DiaoChao
+
+[ 2016-01-02T18:26:27+08:00 ] 127.0.0.1 /index.php/index.php/DiaoCha/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+ERR: 无法加载模块:Index.php
+
